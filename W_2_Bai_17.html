@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17</title>
+    <style>
+        body{
+            background-color:orange;
+        }
+        #Name{
+            width:250px;
+        }
+        #Day{
+            width:50px
+        }
+        #Year{
+            width:50px
+        }
+        select{
+            width:150px;
+        }
+    </style>
+</head>
+
+<body>
+    <Form>
+        <h1 align="center">Survey Form</h1>
+        <p>If you are interested in purchasing one or more of our products, before ordering please complete som or all of the following survey for our marketing department. Answering any fquestion is optional, and all infomation wiil be kept strictly confidential. Thank you very much for your time!</p>
+       <ol>
+        <li> <p>
+       <label for="Name">What is your name?</label><br><input type="text" id="Name" ></p></li>
+        <li><p>What is your birth date?<br>Month:
+        <select id="Month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        Date: <select name="Day" id="Day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="...">...</option>
+        </select>
+        Year: <input type="text" name="Year" id="Year" readonly="readonly" value="19">
+       </p></li>
+        <li><p>What is your maling address (if you would like to have a hard copy of our catalog sent to you)?<br>
+        <textarea name="Address" id="Address" cols="80" rows="10">
+        </textarea>
+       </p></li>
+        <li> <p>What is your email address?<br>
+        <input type="email" id="Email" name="email">
+       </p></li>
+        <li> <p>
+        How you viewed our online product catalog?<br>
+        <input type="radio" name="chose" id="Yes"><label for="Yes">Yes</label>
+        <input type="radio" name="chose" id="No"><label for="No">No</label>
+       </p></li>
+        <li><p>If so, what product(s), besides the one you are odering, might you be interseted in purchasing in the future? (Check all that apply.)<br>
+        <input type="checkbox" name="VCR" id="VCR"><label for="VCR"> VCR</label><br>
+        <input type="checkbox" name="Big Screen TV" id="Big Screen TV"><label for="Big Screen TV"> Big Screen TV</label><br>
+        <input type="checkbox" name="Audio Equipment" id="Audio Equipment"><label for="Audio Equipment"> Audio Equipment</label><br>
+        <input type="checkbox" name="Video Equipment" id="Video Equipment"><label for="Video Equipment"> Video Equipment</label><br>
+        <input type="checkbox" name="Camera Equipment id="Camera Equipment"><label for="Camera Equipment"> Camera Equipment</label><br>
+        <input type="checkbox" id="Other" name="Other"><label for="Other">Other</label><input type="text" placeholder="Please List" id="Other">
+        </p></li>
+        <li>Do you have any question, comments or suggestions before proceeding tho the Order Form?<br>
+        <textarea name="Question" id="Question" cols="40" rows="5" placeholder="Your Input:"></textarea>
+        <input type="submit" value="Send Form"> <input type="submit" value="Clear Form">
+        </li>
+       </ol>
+    </Form>
+    <Form>
+        <p>Browser:
+            <select name="Browser" id="Browser">
+                <option value="Egde" selceted>Egde</option>
+                <option value="Egde" selceted>Chorme</option>
+                <option value="Egde" selceted>Opera</option>
+            </select>
+        </p>
+        <p>Username:
+            <input type="text" name="Username" id="Username">
+        </p>
+        <p>Encrytion
+            <select name="Encrytion" id="Encrytion">
+                <option value="2048(High Grade)" selceted>2048(High Grade)</option>
+                <option value="Egde" selceted>Chorme</option>
+                <option value="Egde" selceted>Opera</option>
+            </select>
+        </p>
+        <p>Trên hình là thanh trượt phạm vi ( chưa biết làm)</p>
+        <p><input type="text" placeholder="50"></p>
+        <p></p>
+    </Form>
+</body>
+
+</html>
